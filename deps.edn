@@ -1,0 +1,12 @@
+{:paths   ["src"]
+
+ :deps    {org.clojure/clojurescript {:mvn/version "1.11.57"}
+           thheller/shadow-cljs      {:mvn/version "2.19.3"}
+           reagent/reagent           {:mvn/version "1.1.1"}
+           re-frame/re-frame         {:mvn/version "1.2.0"}
+           metosin/reitit-frontend   {:mvn/version "0.5.18"}}
+
+
+ :aliases {; clojure -M:outdated --upgrade
+           :outdated            {:extra-deps {com.github.liquidz/antq {:mvn/version "1.7.804"}}
+                                 :main-opts  ["-m" "antq.core"]}}}
